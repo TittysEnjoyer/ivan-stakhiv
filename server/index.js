@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -7,9 +6,10 @@ const routes = require('./routes/routes');
 const app = express();
 
 app.use(express.json());
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use('/api', routes)
 
-const mongoString = process.env.DATABASE_URL;
+const mongoString = "mongodb+srv://zhurakgithub:WfKKbwWJEjGsazrt@bti-secretary.6dpe0.mongodb.net/STAKHIV_DATABASE";
 
 mongoose.connect(mongoString);
 const database = mongoose.connection;
