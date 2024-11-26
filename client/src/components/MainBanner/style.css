@@ -1,0 +1,36 @@
+.banner {
+    width: 100%;
+    height: 632px;
+    padding: 0 calc(50% - 720px + 96px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 580px;
+}
+.banner-title {
+    color: #0B2464;
+    font-weight: 800;
+    line-height: 66px;
+    font-size: 56px;
+}
+
+.banner-subtitle {
+    margin-top: 24px;
+}
+
+#banner_btn {
+    margin-top: 24px;
+}
+.banner-image {
+    width: 600px;
+}
+
+.banner-image img {
+    width: 100%;
+    border-radius: 24px;
+}

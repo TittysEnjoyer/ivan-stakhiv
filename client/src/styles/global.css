@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.txt-title-primary {
+    font-size: 36px;
+    line-height: 46px;
+    text-decoration: none;
+    color: #0B2464;
+    font-family: "Nunito", sans-serif;
+}
+
+.txt-desc-primary {
+    font-size: 18px;
+    text-decoration: none;
+    color: #586680;
+    line-height: 30px;
+    font-family: "Nunito", sans-serif;
+}
