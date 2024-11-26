@@ -8,7 +8,7 @@ const Gallery = () => {
             <div className="gallery-wrapper">
                 <div className="gallery-card">
                     <img className="gallery-card-image" src="/assets/images/1.png" alt="" />
-                    <h2 className="txt-title-primary gallery-card-title">Education</h2>
+                    <h2 className="txt-title-primary gallery-card-title">Я і бал принцес</h2>
                     <span className="txt-desc-primary gallery-card-desc">Interactive content with vibrant animations and captivating visual effects.</span>
                 </div>
                 <div className="gallery-card">
