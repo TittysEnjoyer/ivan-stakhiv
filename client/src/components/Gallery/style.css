@@ -1,6 +1,6 @@
 .gallery {
     width: 100%;
-    padding: 0 calc(50% - 720px + 48px);
+    padding: 0 calc(50% - 570px );
 }
 
 .gallery-title {
@@ -17,8 +17,8 @@
 
 .gallery-card {
     cursor: pointer;
-    width: 256px;
-    height: 316px;
+    width: 204px;
+    height: 252px;
     padding: 24px 12px;
     display: flex;
     flex-direction: column;
@@ -35,8 +35,8 @@
 }
 
 .gallery-card-image{
-    width: 110px;
-    height: 110px;
+    width: 92px;
+    height: 92px;
 }
 
 .gallery-card-title {
