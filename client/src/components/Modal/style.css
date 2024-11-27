@@ -1,0 +1,53 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000046;
+    z-index: 1000;
+}
+
+.modal-wrapper {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    position: relative;
+    left: 50%;
+    top: calc(50% - 250px);
+    transform: translateX(-50%);
+    width: 600px;
+    height: 500px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    background: url("../../../public/assets/images/close.png") no-repeat;
+    background-size: cover;
+}
+
+.closed-form {
+    display: none;
+}
+
+input {
+    margin-bottom: 50px;
+    background: none;
+    border: none;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px solid #0c2a74;
+}
+input:focus {
+    outline: none;
+    border: none;
+}

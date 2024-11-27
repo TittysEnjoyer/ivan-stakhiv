@@ -27,11 +27,11 @@ router.get('/all-post', async (req, res) => {
     }
 });
 
-router.delete('/delete-post/:nickname', async (req, res) => {
-    const { nickname } = req.params;
+router.delete('/delete-post/:_id', async (req, res) => {
+    const { _id } = req.params;
 
     try {
-        const deletedPost = await Model.findOneAndDelete({ nickname });
+        const deletedPost = await Model.findOneAndDelete({ _id });
 
         if (!deletedPost) {
             return res.status(404).json({ message: 'Пост із вказаним nickname не знайдено' });
@@ -43,22 +43,22 @@ router.delete('/delete-post/:nickname', async (req, res) => {
     }
 });
 
-router.put('/update-post/:nickname', async (req, res) => {
-    const { nickname } = req.params;
+router.put('/update-post/:_id', async (req, res) => {
+    const { _id } = req.params;
     const { post, tag } = req.body;
 
     try {
         const updatedPost = await Model.findOneAndUpdate(
-            { nickname },
+            { _id },
             { post, tag },
             { new: true }
         );
 
         if (!updatedPost) {
-            return res.status(404).json({ message: 'Пост із вказаним nickname не знайдено' });
+            return res.status(404).json({ message: 'Пост із вказаним id не знайдено' });
         }
 
-        res.status(200).json({ message: 'Пост успішно оновлено', updatedPost });
+        res.status(200).json({ message: 'Пост успішно оновлено', id });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

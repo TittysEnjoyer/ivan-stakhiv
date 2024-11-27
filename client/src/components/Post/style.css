@@ -1,0 +1,63 @@
+.post-wrapper {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    width: 800px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.user-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url("../../../public/assets/images/profile.png") no-repeat;
+    background-size: cover;
+}
+.user-post {
+    display: flex;
+    width: 730px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-right: 60px solid #f1f1f1;
+}
+.user-post-content {
+    width: 100%;
+    padding-top: 30px;
+    width: 100%; 
+    border-radius: 0 24px 24px 24px;
+    width: 670px;
+    padding: 24px;
+    background-color: #f1f1f1;
+}
+
+.user-post-content-wrapper {
+    width: 100%;
+}
+
+.user-panel {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+.user-tag {
+    font-size: 25px;
+    color: red;
+}
+.buttons > div {
+    padding: 9px 12px;
+    border-radius: 12px;
+    background-color: #b3b3b3;
+}

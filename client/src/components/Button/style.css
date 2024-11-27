@@ -1,4 +1,8 @@
 .btn {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     padding: 18px 24px;
     background-color: #0B2464;
@@ -13,4 +17,9 @@
     line-height: 18px;
     color: #fff;
     font-weight: 800;
+}
+
+button:focus {
+    outline: none;
+    border: none;
 }

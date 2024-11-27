@@ -4,9 +4,7 @@ import './style.css'
 
 import Button from "../Button";
 
-const Header = () => {
-    const router = useNavigate();
-
+const Header = (props) => {
     return (
         <header>
             <div className="logo">
@@ -16,18 +14,18 @@ const Header = () => {
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <a className="list-item-link" href="">Home</a>
+                        <a className="list-item-link" href="/">Home</a>
                     </li>
                     <li className="list-item">
-                        <a className="list-item-link" href="">My Posts</a>
+                        <a className="list-item-link" href="/all-posts">All Post</a>
                     </li>
                     <li className="list-item">
-                        <a className="list-item-link" href="">About</a>
+                        <a className="list-item-link" href="https://www.instagram.com/patlatiy88/">About Me</a>
                     </li>
                 </ul>
             </nav>
 
-            <Button onClick={() => router("/create-post")} title={'Create Post'} ></Button>
+            <Button onClick={props.onClick} title={'Create Post'} ></Button>
         </header>
     )
 }
